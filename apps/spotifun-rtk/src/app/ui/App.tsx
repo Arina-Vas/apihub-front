@@ -4,6 +4,7 @@ import { Header, Layout } from "@/common/components"
 import { Routing } from "@/common/routing"
 import { GlobalLinearProgress } from "@/common/components/GlobalLinearProgress/GlobalLinearProgress"
 import { ErrorToaster } from "@/common/components/ErrorToaster/ErrorToaster"
+import { NavBar } from "@/common/components/NavBar/NavBar.tsx"
 
 export const App = () => {
   return (
@@ -12,7 +13,10 @@ export const App = () => {
       <Header />
       <GlobalLinearProgress />
       <Layout>
-        <Routing />
+        <NavBar />
+        <main>
+          <Routing />
+        </main>
       </Layout>
       <ToastContainer />
     </>
